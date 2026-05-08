@@ -12,7 +12,7 @@ class HelloController {
 	@GetMapping("/hello")
     @ConcurrencyLimit(1)
 	public String hello() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         log.info("Hello World!");
 		return "Hello World!";
 	}
