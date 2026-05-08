@@ -13,7 +13,7 @@ class HelloController {
     @ConcurrencyLimit(1)
 	public String hello() throws InterruptedException {
         Thread.sleep(1000);
-
+        log.info("Hello World!");
 		return "Hello World!";
 	}
 }
